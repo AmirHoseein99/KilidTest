@@ -1,6 +1,6 @@
 # KilidTest
 a python project, for data science interview
-crawling data from [here] (https://www.google.com](https://www.tgju.org/profile/price_dollar_rl/history)
+crawling data from [here](https://www.tgju.org/profile/price_dollar_rl/history)
 creating a posgresSql table
 retriving the data from table
 plot the data
