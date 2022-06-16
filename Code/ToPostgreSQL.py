@@ -15,7 +15,8 @@ USERNAME = 'postgres'
 PASSWORD = 12345678
 DATABASE_NAME = 'KilidTest_db'
 TABLE_NAME = 'data'
-#we get the data from table by this query, you can chang it accoring to your need for data
+
+# we get the data from table by this query, you can chang it accoring to your need for data
 QUERY =  f'''select date, open, high, low, close  from {TABLE_NAME} ORDER BY date DESC;'''
 
 """
@@ -78,13 +79,10 @@ class PostgresClass():
             fig, ax = plt.subplots()
             candlestick_ohlc(ax, ohlc.values, width=0.6,
                  colorup='green', colordown='red', alpha=0.8)
-            # Formatting Date
             date_format = mpl_dates.DateFormatter("%Y/%m/%d")
             ax.xaxis.set_major_formatter(date_format)
             fig.autofmt_xdate()
-            
             fig.tight_layout()
-            
             plt.show()
 
 
